@@ -1,0 +1,1196 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top/DUT/FIFO_sva_inst
+=== Design Unit: work.FIFO_sva
+=================================================================================
+
+Directive Coverage:
+    Directives                      28        28         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/top/DUT/FIFO_sva_inst/rst_n_cover/cover_wr_akc_rst 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(69)
+                                                                               312 Covered   
+/top/DUT/FIFO_sva_inst/rst_n_cover/cover_overflow_rst 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(70)
+                                                                               312 Covered   
+/top/DUT/FIFO_sva_inst/rst_n_cover/cover_underflow_rst 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(71)
+                                                                               312 Covered   
+/top/DUT/FIFO_sva_inst/rst_n_cover/cover_data_out_rst 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(72)
+                                                                               312 Covered   
+/top/DUT/FIFO_sva_inst/rst_n_cover/cover_full_rst 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(75)
+                                                                               312 Covered   
+/top/DUT/FIFO_sva_inst/rst_n_cover/cover_almostfull_rst 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(76)
+                                                                               312 Covered   
+/top/DUT/FIFO_sva_inst/rst_n_cover/cover_empty_rst 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(77)
+                                                                               312 Covered   
+/top/DUT/FIFO_sva_inst/rst_n_cover/cover_almostempty_rst 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(78)
+                                                                               312 Covered   
+/top/DUT/FIFO_sva_inst/full_from_almost_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(84)
+                                                                              2558 Covered   
+/top/DUT/FIFO_sva_inst/full_noChange_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(85)
+                                                                              6787 Covered   
+/top/DUT/FIFO_sva_inst/full_inactive_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(86)
+                                                                              2556 Covered   
+/top/DUT/FIFO_sva_inst/ack_active_cover  FIFO_sva Verilog  SVA  DUT/assertion.sv(89)
+                                                                              12431 Covered   
+/top/DUT/FIFO_sva_inst/ack_inactive_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(90)
+                                                                              8393 Covered   
+/top/DUT/FIFO_sva_inst/almostfull_from_full_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(93)
+                                                                              2556 Covered   
+/top/DUT/FIFO_sva_inst/almostfull_noChange_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(94)
+                                                                              6787 Covered   
+/top/DUT/FIFO_sva_inst/almostfull_inactive_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(95)
+                                                                               288 Covered   
+/top/DUT/FIFO_sva_inst/overflow_active_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(98)
+                                                                              8393 Covered   
+/top/DUT/FIFO_sva_inst/overflow_wr_in_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(99)
+                                                                               818 Covered   
+/top/DUT/FIFO_sva_inst/overflow_Nfull_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(100)
+                                                                               942 Covered   
+/top/DUT/FIFO_sva_inst/almostempty_noChange_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(103)
+                                                                              6787 Covered   
+/top/DUT/FIFO_sva_inst/almostempty_from_empty_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(104)
+                                                                              1391 Covered   
+/top/DUT/FIFO_sva_inst/almostempty_inactive_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(105)
+                                                                               526 Covered   
+/top/DUT/FIFO_sva_inst/empty_noChaneg_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(108)
+                                                                              6787 Covered   
+/top/DUT/FIFO_sva_inst/empty_from_almost_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(109)
+                                                                              1216 Covered   
+/top/DUT/FIFO_sva_inst/empty_inactive_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(110)
+                                                                              1391 Covered   
+/top/DUT/FIFO_sva_inst/underflow_active_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(113)
+                                                                              9033 Covered   
+/top/DUT/FIFO_sva_inst/underflow_Nempty_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(114)
+                                                                              1133 Covered   
+/top/DUT/FIFO_sva_inst/underflow_Nrd_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(115)
+                                                                               939 Covered   
+
+=================================================================================
+=== Instance: /coverage_collector_pkg
+=== Design Unit: work.coverage_collector_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses         35        na        na        na
+            Covergroup Bins        171       171         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /coverage_collector_pkg/FIFO_coverage/CVG       100.00%        100          -    Covered              
+    covered/total bins:                                   171        171          -                      
+    missing/total bins:                                     0        171          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint rst_cp                                 100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint wr_en_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint rd_en_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint data_out_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                18         18          -                      
+        missing/total bins:                                 0         18          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint wr_ack_cp                              100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint full_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint empty_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint almostfull_cp                          100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint almostempty_cp                         100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint underflow_cp                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint overflow_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross ack_rst_cross                               100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross ack_wr_rd_cross                             100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross ack_full_wr_cross                           100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross ack_empty_cross                             100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross ack_almostempty_cross                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rst_full_cross                              100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross full_cross                                  100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross almostfull_full_cross                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross full_overflow_cross                         100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rst_empty_cross                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross almostempty_empty_cross                     100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross empty_cross                                 100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross empty_underflow_cross                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rst_overflow_cross                          100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross wr_overflow_cross                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rst_underflow_cross                         100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rd_underflow_cross                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rst_almostempty_cross                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross almostempty_cross                           100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rst_almostfull_cross                        100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross almostfull_cross                            100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rst_data_out_cross                          100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross data_out_cross                              100.00%        100          -    Covered              
+        covered/total bins:                                72         72          -                      
+        missing/total bins:                                 0         72          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rd_wr_cross                                 100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/coverage_collector_pkg::FIFO_coverage::CVG  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                   171        171          -                      
+    missing/total bins:                                     0        171          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint rst_cp                                 100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                        562          1          -    Covered              
+        bin inactive                                    41246          1          -    Covered              
+        bin inactive_to_active                            311          1          -    Covered              
+        bin active_to_inactive                            312          1          -    Covered              
+    Coverpoint wr_en_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                      21115          1          -    Covered              
+        bin inactive                                    20693          1          -    Covered              
+    Coverpoint rd_en_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                      21625          1          -    Covered              
+        bin inactive                                    20183          1          -    Covered              
+    Coverpoint data_out_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                18         18          -                      
+        missing/total bins:                                 0         18          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin one_bit_H[1]                                 1043          1          -    Covered              
+        bin one_bit_H[2]                                  724          1          -    Covered              
+        bin one_bit_H[4]                                  717          1          -    Covered              
+        bin one_bit_H[8]                                  982          1          -    Covered              
+        bin one_bit_H[16]                                 981          1          -    Covered              
+        bin one_bit_H[32]                                 878          1          -    Covered              
+        bin one_bit_H[64]                                 786          1          -    Covered              
+        bin one_bit_H[128]                                790          1          -    Covered              
+        bin one_bit_H[256]                                988          1          -    Covered              
+        bin one_bit_H[512]                                754          1          -    Covered              
+        bin one_bit_H[1024]                               985          1          -    Covered              
+        bin one_bit_H[2048]                              1509          1          -    Covered              
+        bin one_bit_H[4096]                              1028          1          -    Covered              
+        bin one_bit_H[8192]                               882          1          -    Covered              
+        bin one_bit_H[16384]                              977          1          -    Covered              
+        bin one_bit_H[32768]                             1154          1          -    Covered              
+        bin zero                                         2928          1          -    Covered              
+        bin max                                           267          1          -    Covered              
+        default bin others                              23435                     -    Occurred             
+    Coverpoint wr_ack_cp                              100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                      12552          1          -    Covered              
+        bin inactive                                    29256          1          -    Covered              
+        bin inactive_to_active                           6566          1          -    Covered              
+        bin active_to_inactive                           6566          1          -    Covered              
+    Coverpoint full_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                      11918          1          -    Covered              
+        bin inactive                                    29890          1          -    Covered              
+        bin active_to_inactive                           2559          1          -    Covered              
+        bin inactive_to_active                           2559          1          -    Covered              
+    Coverpoint empty_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                      11142          1          -    Covered              
+        bin inactive                                    30666          1          -    Covered              
+        bin active_to_inactive                           1437          1          -    Covered              
+        bin inactive_to_active                           1437          1          -    Covered              
+    Coverpoint almostfull_cp                          100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                       9166          1          -    Covered              
+        bin inactive                                    32642          1          -    Covered              
+        bin active_to_inactive                           2854          1          -    Covered              
+        bin inactive_to_active                           2854          1          -    Covered              
+    Coverpoint almostempty_cp                         100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                       5032          1          -    Covered              
+        bin inactive                                    36776          1          -    Covered              
+        bin active_to_inactive                           1888          1          -    Covered              
+        bin inactive_to_active                           1888          1          -    Covered              
+    Coverpoint underflow_cp                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                       9120          1          -    Covered              
+        bin inactive                                    32688          1          -    Covered              
+    Coverpoint overflow_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                       8394          1          -    Covered              
+        bin inactive                                    33414          1          -    Covered              
+    Cross ack_rst_cross                               100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin rst_active_ack_inactive                   562          1          -    Covered              
+    Cross ack_wr_rd_cross                             100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin activate_ack_wr_inactive                 5738          1          -    Covered              
+            bin deactivate_ack_wr_active                 6566          1          -    Covered              
+            bin ack_inactive_wr_inactive                20693          1          -    Covered              
+            bin deactivate_ack_rd_active                 3234          1          -    Covered              
+            bin deactivate_ack_wr_active_rd_active        218          1          -    Covered              
+    Cross ack_full_wr_cross                           100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin ack_active_wr_active_full_inactive       9993          1          -    Covered              
+            bin ack_active_full_inactive                 9993          1          -    Covered              
+            bin activated_full_activated_ack             2159          1          -    Covered              
+    Cross ack_empty_cross                             100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin deactivated_empty_wr_active              1316          1          -    Covered              
+    Cross ack_almostempty_cross                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin ack_active_almostempty_inactive          8893          1          -    Covered              
+    Cross rst_full_cross                              100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin deactivate_full_activate_rst                3          1          -    Covered              
+    Cross full_cross                                  100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin activate_full_wr_active                  2559          1          -    Covered              
+            bin full_active_wr_active                   10237          1          -    Covered              
+            bin deactivate_full_rd_active                2558          1          -    Covered              
+    Cross almostfull_full_cross                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin trans_almostfull_to_full                 2559          1          -    Covered              
+            bin trans_full_to_almostfull                 2556          1          -    Covered              
+    Cross full_overflow_cross                         100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin overflow_full_both_active                7678          1          -    Covered              
+    Cross rst_empty_cross                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin rst_empty                                 562          1          -    Covered              
+            bin deactivate_rst_activate_empty             189          1          -    Covered              
+    Cross almostempty_empty_cross                     100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin trans_almostempty_to_empty               1248          1          -    Covered              
+            bin trans_empty_to_almostempty               1316          1          -    Covered              
+    Cross empty_cross                                 100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin activate_empty_rd_active                 1358          1          -    Covered              
+            bin empty_active_rd_active                   9444          1          -    Covered              
+            bin deactivate_empty_wr_active               1357          1          -    Covered              
+    Cross empty_underflow_cross                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin underflow_empty                          8196          1          -    Covered              
+    Cross rst_overflow_cross                          100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin rst_active_ack_inactive                   562          1          -    Covered              
+    Cross wr_overflow_cross                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin both_high                                8394          1          -    Covered              
+            bin overflow_high                           12721          1          -    Covered              
+    Cross rst_underflow_cross                         100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin rst_ack                                   562          1          -    Covered              
+    Cross rd_underflow_cross                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin both_high                                9120          1          -    Covered              
+            bin rd_high                                 12505          1          -    Covered              
+    Cross rst_almostempty_cross                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin rst_almostempty                           562          1          -    Covered              
+    Cross almostempty_cross                           100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin write_almost_active                      3659          1          -    Covered              
+            bin write_Active_almost_inactive            17456          1          -    Covered              
+            bin almost_read_active                       3593          1          -    Covered              
+            bin read_active_almost_inactive             18032          1          -    Covered              
+            bin activate_almost_write_active             1439          1          -    Covered              
+            bin activate_almost_read_active              1373          1          -    Covered              
+    Cross rst_almostfull_cross                        100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin rst_almostfull                            562          1          -    Covered              
+    Cross almostfull_cross                            100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin wr_active_almost_active                  4872          1          -    Covered              
+            bin wr_active_almost_inactive               16243          1          -    Covered              
+            bin rd_active_almost_active                  6414          1          -    Covered              
+            bin rd_active_almost_inactive               15211          1          -    Covered              
+    Cross rst_data_out_cross                          100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin rst_data                                  562          1          -    Covered              
+    Cross data_out_cross                              100.00%        100          -    Covered              
+        covered/total bins:                                72         72          -                      
+        missing/total bins:                                 0         72          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <max,inactive,inactive>                    73          1          -    Covered              
+            bin <zero,inactive,inactive>                  507          1          -    Covered              
+            bin <one_bit_H[32768],inactive,inactive> 
+                                                          176          1          -    Covered              
+            bin <one_bit_H[16384],inactive,inactive> 
+                                                          224          1          -    Covered              
+            bin <one_bit_H[8192],inactive,inactive> 
+                                                          113          1          -    Covered              
+            bin <one_bit_H[4096],inactive,inactive> 
+                                                          192          1          -    Covered              
+            bin <one_bit_H[2048],inactive,inactive> 
+                                                          384          1          -    Covered              
+            bin <one_bit_H[1024],inactive,inactive> 
+                                                          160          1          -    Covered              
+            bin <one_bit_H[512],inactive,inactive>         96          1          -    Covered              
+            bin <one_bit_H[256],inactive,inactive>        128          1          -    Covered              
+            bin <one_bit_H[128],inactive,inactive>         80          1          -    Covered              
+            bin <one_bit_H[64],inactive,inactive>         144          1          -    Covered              
+            bin <one_bit_H[32],inactive,inactive>         177          1          -    Covered              
+            bin <one_bit_H[16],inactive,inactive>         224          1          -    Covered              
+            bin <one_bit_H[8],inactive,inactive>          192          1          -    Covered              
+            bin <one_bit_H[4],inactive,inactive>          112          1          -    Covered              
+            bin <one_bit_H[2],inactive,inactive>          113          1          -    Covered              
+            bin <one_bit_H[1],inactive,inactive>          194          1          -    Covered              
+            bin <max,active,inactive>                      61          1          -    Covered              
+            bin <zero,active,inactive>                   1137          1          -    Covered              
+            bin <one_bit_H[32768],active,inactive>        368          1          -    Covered              
+            bin <one_bit_H[16384],active,inactive>        320          1          -    Covered              
+            bin <one_bit_H[8192],active,inactive>         240          1          -    Covered              
+            bin <one_bit_H[4096],active,inactive>         320          1          -    Covered              
+            bin <one_bit_H[2048],active,inactive>         496          1          -    Covered              
+            bin <one_bit_H[1024],active,inactive>         336          1          -    Covered              
+            bin <one_bit_H[512],active,inactive>          240          1          -    Covered              
+            bin <one_bit_H[256],active,inactive>          274          1          -    Covered              
+            bin <one_bit_H[128],active,inactive>           96          1          -    Covered              
+            bin <one_bit_H[64],active,inactive>           224          1          -    Covered              
+            bin <one_bit_H[32],active,inactive>           224          1          -    Covered              
+            bin <one_bit_H[16],active,inactive>           129          1          -    Covered              
+            bin <one_bit_H[8],active,inactive>            256          1          -    Covered              
+            bin <one_bit_H[4],active,inactive>            224          1          -    Covered              
+            bin <one_bit_H[2],active,inactive>            116          1          -    Covered              
+            bin <one_bit_H[1],active,inactive>            513          1          -    Covered              
+            bin <max,inactive,active>                      62          1          -    Covered              
+            bin <zero,inactive,active>                    967          1          -    Covered              
+            bin <one_bit_H[32768],inactive,active>        385          1          -    Covered              
+            bin <one_bit_H[16384],inactive,active>        196          1          -    Covered              
+            bin <one_bit_H[8192],inactive,active>         298          1          -    Covered              
+            bin <one_bit_H[4096],inactive,active>         293          1          -    Covered              
+            bin <one_bit_H[2048],inactive,active>         391          1          -    Covered              
+            bin <one_bit_H[1024],inactive,active>         262          1          -    Covered              
+            bin <one_bit_H[512],inactive,active>          181          1          -    Covered              
+            bin <one_bit_H[256],inactive,active>          369          1          -    Covered              
+            bin <one_bit_H[128],inactive,active>          378          1          -    Covered              
+            bin <one_bit_H[64],inactive,active>           185          1          -    Covered              
+            bin <one_bit_H[32],inactive,active>           244          1          -    Covered              
+            bin <one_bit_H[16],inactive,active>           400          1          -    Covered              
+            bin <one_bit_H[8],inactive,active>            304          1          -    Covered              
+            bin <one_bit_H[4],inactive,active>            155          1          -    Covered              
+            bin <one_bit_H[2],inactive,active>            263          1          -    Covered              
+            bin <one_bit_H[1],inactive,active>            100          1          -    Covered              
+            bin <max,active,active>                        71          1          -    Covered              
+            bin <zero,active,active>                      317          1          -    Covered              
+            bin <one_bit_H[32768],active,active>          225          1          -    Covered              
+            bin <one_bit_H[16384],active,active>          237          1          -    Covered              
+            bin <one_bit_H[8192],active,active>           231          1          -    Covered              
+            bin <one_bit_H[4096],active,active>           223          1          -    Covered              
+            bin <one_bit_H[2048],active,active>           238          1          -    Covered              
+            bin <one_bit_H[1024],active,active>           227          1          -    Covered              
+            bin <one_bit_H[512],active,active>            237          1          -    Covered              
+            bin <one_bit_H[256],active,active>            217          1          -    Covered              
+            bin <one_bit_H[128],active,active>            236          1          -    Covered              
+            bin <one_bit_H[64],active,active>             233          1          -    Covered              
+            bin <one_bit_H[32],active,active>             233          1          -    Covered              
+            bin <one_bit_H[16],active,active>             228          1          -    Covered              
+            bin <one_bit_H[8],active,active>              230          1          -    Covered              
+            bin <one_bit_H[4],active,active>              226          1          -    Covered              
+            bin <one_bit_H[2],active,active>              232          1          -    Covered              
+            bin <one_bit_H[1],active,active>              236          1          -    Covered              
+    Cross rd_wr_cross                                 100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <inactive,inactive>                      7638          1          -    Covered              
+            bin <active,inactive>                       13055          1          -    Covered              
+            bin <inactive,active>                       12545          1          -    Covered              
+            bin <active,active>                          8570          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /coverage_collector_pkg/FIFO_coverage/CVG       100.00%        100          -    Covered              
+    covered/total bins:                                   171        171          -                      
+    missing/total bins:                                     0        171          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint rst_cp                                 100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint wr_en_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint rd_en_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint data_out_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                18         18          -                      
+        missing/total bins:                                 0         18          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint wr_ack_cp                              100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint full_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint empty_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint almostfull_cp                          100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint almostempty_cp                         100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint underflow_cp                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint overflow_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross ack_rst_cross                               100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross ack_wr_rd_cross                             100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross ack_full_wr_cross                           100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross ack_empty_cross                             100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross ack_almostempty_cross                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rst_full_cross                              100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross full_cross                                  100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross almostfull_full_cross                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross full_overflow_cross                         100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rst_empty_cross                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross almostempty_empty_cross                     100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross empty_cross                                 100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross empty_underflow_cross                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rst_overflow_cross                          100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross wr_overflow_cross                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rst_underflow_cross                         100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rd_underflow_cross                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rst_almostempty_cross                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross almostempty_cross                           100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rst_almostfull_cross                        100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross almostfull_cross                            100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rst_data_out_cross                          100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross data_out_cross                              100.00%        100          -    Covered              
+        covered/total bins:                                72         72          -                      
+        missing/total bins:                                 0         72          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross rd_wr_cross                                 100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/coverage_collector_pkg::FIFO_coverage::CVG  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                   171        171          -                      
+    missing/total bins:                                     0        171          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint rst_cp                                 100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                        562          1          -    Covered              
+        bin inactive                                    41246          1          -    Covered              
+        bin inactive_to_active                            311          1          -    Covered              
+        bin active_to_inactive                            312          1          -    Covered              
+    Coverpoint wr_en_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                      21115          1          -    Covered              
+        bin inactive                                    20693          1          -    Covered              
+    Coverpoint rd_en_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                      21625          1          -    Covered              
+        bin inactive                                    20183          1          -    Covered              
+    Coverpoint data_out_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                18         18          -                      
+        missing/total bins:                                 0         18          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin one_bit_H[1]                                 1043          1          -    Covered              
+        bin one_bit_H[2]                                  724          1          -    Covered              
+        bin one_bit_H[4]                                  717          1          -    Covered              
+        bin one_bit_H[8]                                  982          1          -    Covered              
+        bin one_bit_H[16]                                 981          1          -    Covered              
+        bin one_bit_H[32]                                 878          1          -    Covered              
+        bin one_bit_H[64]                                 786          1          -    Covered              
+        bin one_bit_H[128]                                790          1          -    Covered              
+        bin one_bit_H[256]                                988          1          -    Covered              
+        bin one_bit_H[512]                                754          1          -    Covered              
+        bin one_bit_H[1024]                               985          1          -    Covered              
+        bin one_bit_H[2048]                              1509          1          -    Covered              
+        bin one_bit_H[4096]                              1028          1          -    Covered              
+        bin one_bit_H[8192]                               882          1          -    Covered              
+        bin one_bit_H[16384]                              977          1          -    Covered              
+        bin one_bit_H[32768]                             1154          1          -    Covered              
+        bin zero                                         2928          1          -    Covered              
+        bin max                                           267          1          -    Covered              
+        default bin others                              23435                     -    Occurred             
+    Coverpoint wr_ack_cp                              100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                      12552          1          -    Covered              
+        bin inactive                                    29256          1          -    Covered              
+        bin inactive_to_active                           6566          1          -    Covered              
+        bin active_to_inactive                           6566          1          -    Covered              
+    Coverpoint full_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                      11918          1          -    Covered              
+        bin inactive                                    29890          1          -    Covered              
+        bin active_to_inactive                           2559          1          -    Covered              
+        bin inactive_to_active                           2559          1          -    Covered              
+    Coverpoint empty_cp                               100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                      11142          1          -    Covered              
+        bin inactive                                    30666          1          -    Covered              
+        bin active_to_inactive                           1437          1          -    Covered              
+        bin inactive_to_active                           1437          1          -    Covered              
+    Coverpoint almostfull_cp                          100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                       9166          1          -    Covered              
+        bin inactive                                    32642          1          -    Covered              
+        bin active_to_inactive                           2854          1          -    Covered              
+        bin inactive_to_active                           2854          1          -    Covered              
+    Coverpoint almostempty_cp                         100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                       5032          1          -    Covered              
+        bin inactive                                    36776          1          -    Covered              
+        bin active_to_inactive                           1888          1          -    Covered              
+        bin inactive_to_active                           1888          1          -    Covered              
+    Coverpoint underflow_cp                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                       9120          1          -    Covered              
+        bin inactive                                    32688          1          -    Covered              
+    Coverpoint overflow_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin active                                       8394          1          -    Covered              
+        bin inactive                                    33414          1          -    Covered              
+    Cross ack_rst_cross                               100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin rst_active_ack_inactive                   562          1          -    Covered              
+    Cross ack_wr_rd_cross                             100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin activate_ack_wr_inactive                 5738          1          -    Covered              
+            bin deactivate_ack_wr_active                 6566          1          -    Covered              
+            bin ack_inactive_wr_inactive                20693          1          -    Covered              
+            bin deactivate_ack_rd_active                 3234          1          -    Covered              
+            bin deactivate_ack_wr_active_rd_active        218          1          -    Covered              
+    Cross ack_full_wr_cross                           100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin ack_active_wr_active_full_inactive       9993          1          -    Covered              
+            bin ack_active_full_inactive                 9993          1          -    Covered              
+            bin activated_full_activated_ack             2159          1          -    Covered              
+    Cross ack_empty_cross                             100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin deactivated_empty_wr_active              1316          1          -    Covered              
+    Cross ack_almostempty_cross                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin ack_active_almostempty_inactive          8893          1          -    Covered              
+    Cross rst_full_cross                              100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin deactivate_full_activate_rst                3          1          -    Covered              
+    Cross full_cross                                  100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin activate_full_wr_active                  2559          1          -    Covered              
+            bin full_active_wr_active                   10237          1          -    Covered              
+            bin deactivate_full_rd_active                2558          1          -    Covered              
+    Cross almostfull_full_cross                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin trans_almostfull_to_full                 2559          1          -    Covered              
+            bin trans_full_to_almostfull                 2556          1          -    Covered              
+    Cross full_overflow_cross                         100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin overflow_full_both_active                7678          1          -    Covered              
+    Cross rst_empty_cross                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin rst_empty                                 562          1          -    Covered              
+            bin deactivate_rst_activate_empty             189          1          -    Covered              
+    Cross almostempty_empty_cross                     100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin trans_almostempty_to_empty               1248          1          -    Covered              
+            bin trans_empty_to_almostempty               1316          1          -    Covered              
+    Cross empty_cross                                 100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin activate_empty_rd_active                 1358          1          -    Covered              
+            bin empty_active_rd_active                   9444          1          -    Covered              
+            bin deactivate_empty_wr_active               1357          1          -    Covered              
+    Cross empty_underflow_cross                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin underflow_empty                          8196          1          -    Covered              
+    Cross rst_overflow_cross                          100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin rst_active_ack_inactive                   562          1          -    Covered              
+    Cross wr_overflow_cross                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin both_high                                8394          1          -    Covered              
+            bin overflow_high                           12721          1          -    Covered              
+    Cross rst_underflow_cross                         100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin rst_ack                                   562          1          -    Covered              
+    Cross rd_underflow_cross                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin both_high                                9120          1          -    Covered              
+            bin rd_high                                 12505          1          -    Covered              
+    Cross rst_almostempty_cross                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin rst_almostempty                           562          1          -    Covered              
+    Cross almostempty_cross                           100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin write_almost_active                      3659          1          -    Covered              
+            bin write_Active_almost_inactive            17456          1          -    Covered              
+            bin almost_read_active                       3593          1          -    Covered              
+            bin read_active_almost_inactive             18032          1          -    Covered              
+            bin activate_almost_write_active             1439          1          -    Covered              
+            bin activate_almost_read_active              1373          1          -    Covered              
+    Cross rst_almostfull_cross                        100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin rst_almostfull                            562          1          -    Covered              
+    Cross almostfull_cross                            100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin wr_active_almost_active                  4872          1          -    Covered              
+            bin wr_active_almost_inactive               16243          1          -    Covered              
+            bin rd_active_almost_active                  6414          1          -    Covered              
+            bin rd_active_almost_inactive               15211          1          -    Covered              
+    Cross rst_data_out_cross                          100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin rst_data                                  562          1          -    Covered              
+    Cross data_out_cross                              100.00%        100          -    Covered              
+        covered/total bins:                                72         72          -                      
+        missing/total bins:                                 0         72          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <max,inactive,inactive>                    73          1          -    Covered              
+            bin <zero,inactive,inactive>                  507          1          -    Covered              
+            bin <one_bit_H[32768],inactive,inactive> 
+                                                          176          1          -    Covered              
+            bin <one_bit_H[16384],inactive,inactive> 
+                                                          224          1          -    Covered              
+            bin <one_bit_H[8192],inactive,inactive> 
+                                                          113          1          -    Covered              
+            bin <one_bit_H[4096],inactive,inactive> 
+                                                          192          1          -    Covered              
+            bin <one_bit_H[2048],inactive,inactive> 
+                                                          384          1          -    Covered              
+            bin <one_bit_H[1024],inactive,inactive> 
+                                                          160          1          -    Covered              
+            bin <one_bit_H[512],inactive,inactive>         96          1          -    Covered              
+            bin <one_bit_H[256],inactive,inactive>        128          1          -    Covered              
+            bin <one_bit_H[128],inactive,inactive>         80          1          -    Covered              
+            bin <one_bit_H[64],inactive,inactive>         144          1          -    Covered              
+            bin <one_bit_H[32],inactive,inactive>         177          1          -    Covered              
+            bin <one_bit_H[16],inactive,inactive>         224          1          -    Covered              
+            bin <one_bit_H[8],inactive,inactive>          192          1          -    Covered              
+            bin <one_bit_H[4],inactive,inactive>          112          1          -    Covered              
+            bin <one_bit_H[2],inactive,inactive>          113          1          -    Covered              
+            bin <one_bit_H[1],inactive,inactive>          194          1          -    Covered              
+            bin <max,active,inactive>                      61          1          -    Covered              
+            bin <zero,active,inactive>                   1137          1          -    Covered              
+            bin <one_bit_H[32768],active,inactive>        368          1          -    Covered              
+            bin <one_bit_H[16384],active,inactive>        320          1          -    Covered              
+            bin <one_bit_H[8192],active,inactive>         240          1          -    Covered              
+            bin <one_bit_H[4096],active,inactive>         320          1          -    Covered              
+            bin <one_bit_H[2048],active,inactive>         496          1          -    Covered              
+            bin <one_bit_H[1024],active,inactive>         336          1          -    Covered              
+            bin <one_bit_H[512],active,inactive>          240          1          -    Covered              
+            bin <one_bit_H[256],active,inactive>          274          1          -    Covered              
+            bin <one_bit_H[128],active,inactive>           96          1          -    Covered              
+            bin <one_bit_H[64],active,inactive>           224          1          -    Covered              
+            bin <one_bit_H[32],active,inactive>           224          1          -    Covered              
+            bin <one_bit_H[16],active,inactive>           129          1          -    Covered              
+            bin <one_bit_H[8],active,inactive>            256          1          -    Covered              
+            bin <one_bit_H[4],active,inactive>            224          1          -    Covered              
+            bin <one_bit_H[2],active,inactive>            116          1          -    Covered              
+            bin <one_bit_H[1],active,inactive>            513          1          -    Covered              
+            bin <max,inactive,active>                      62          1          -    Covered              
+            bin <zero,inactive,active>                    967          1          -    Covered              
+            bin <one_bit_H[32768],inactive,active>        385          1          -    Covered              
+            bin <one_bit_H[16384],inactive,active>        196          1          -    Covered              
+            bin <one_bit_H[8192],inactive,active>         298          1          -    Covered              
+            bin <one_bit_H[4096],inactive,active>         293          1          -    Covered              
+            bin <one_bit_H[2048],inactive,active>         391          1          -    Covered              
+            bin <one_bit_H[1024],inactive,active>         262          1          -    Covered              
+            bin <one_bit_H[512],inactive,active>          181          1          -    Covered              
+            bin <one_bit_H[256],inactive,active>          369          1          -    Covered              
+            bin <one_bit_H[128],inactive,active>          378          1          -    Covered              
+            bin <one_bit_H[64],inactive,active>           185          1          -    Covered              
+            bin <one_bit_H[32],inactive,active>           244          1          -    Covered              
+            bin <one_bit_H[16],inactive,active>           400          1          -    Covered              
+            bin <one_bit_H[8],inactive,active>            304          1          -    Covered              
+            bin <one_bit_H[4],inactive,active>            155          1          -    Covered              
+            bin <one_bit_H[2],inactive,active>            263          1          -    Covered              
+            bin <one_bit_H[1],inactive,active>            100          1          -    Covered              
+            bin <max,active,active>                        71          1          -    Covered              
+            bin <zero,active,active>                      317          1          -    Covered              
+            bin <one_bit_H[32768],active,active>          225          1          -    Covered              
+            bin <one_bit_H[16384],active,active>          237          1          -    Covered              
+            bin <one_bit_H[8192],active,active>           231          1          -    Covered              
+            bin <one_bit_H[4096],active,active>           223          1          -    Covered              
+            bin <one_bit_H[2048],active,active>           238          1          -    Covered              
+            bin <one_bit_H[1024],active,active>           227          1          -    Covered              
+            bin <one_bit_H[512],active,active>            237          1          -    Covered              
+            bin <one_bit_H[256],active,active>            217          1          -    Covered              
+            bin <one_bit_H[128],active,active>            236          1          -    Covered              
+            bin <one_bit_H[64],active,active>             233          1          -    Covered              
+            bin <one_bit_H[32],active,active>             233          1          -    Covered              
+            bin <one_bit_H[16],active,active>             228          1          -    Covered              
+            bin <one_bit_H[8],active,active>              230          1          -    Covered              
+            bin <one_bit_H[4],active,active>              226          1          -    Covered              
+            bin <one_bit_H[2],active,active>              232          1          -    Covered              
+            bin <one_bit_H[1],active,active>              236          1          -    Covered              
+    Cross rd_wr_cross                                 100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <inactive,inactive>                      7638          1          -    Covered              
+            bin <active,inactive>                       13055          1          -    Covered              
+            bin <inactive,active>                       12545          1          -    Covered              
+            bin <active,active>                          8570          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/top/DUT/FIFO_sva_inst/rst_n_cover/cover_wr_akc_rst 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(69)
+                                                                               312 Covered   
+/top/DUT/FIFO_sva_inst/rst_n_cover/cover_overflow_rst 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(70)
+                                                                               312 Covered   
+/top/DUT/FIFO_sva_inst/rst_n_cover/cover_underflow_rst 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(71)
+                                                                               312 Covered   
+/top/DUT/FIFO_sva_inst/rst_n_cover/cover_data_out_rst 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(72)
+                                                                               312 Covered   
+/top/DUT/FIFO_sva_inst/rst_n_cover/cover_full_rst 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(75)
+                                                                               312 Covered   
+/top/DUT/FIFO_sva_inst/rst_n_cover/cover_almostfull_rst 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(76)
+                                                                               312 Covered   
+/top/DUT/FIFO_sva_inst/rst_n_cover/cover_empty_rst 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(77)
+                                                                               312 Covered   
+/top/DUT/FIFO_sva_inst/rst_n_cover/cover_almostempty_rst 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(78)
+                                                                               312 Covered   
+/top/DUT/FIFO_sva_inst/full_from_almost_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(84)
+                                                                              2558 Covered   
+/top/DUT/FIFO_sva_inst/full_noChange_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(85)
+                                                                              6787 Covered   
+/top/DUT/FIFO_sva_inst/full_inactive_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(86)
+                                                                              2556 Covered   
+/top/DUT/FIFO_sva_inst/ack_active_cover  FIFO_sva Verilog  SVA  DUT/assertion.sv(89)
+                                                                              12431 Covered   
+/top/DUT/FIFO_sva_inst/ack_inactive_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(90)
+                                                                              8393 Covered   
+/top/DUT/FIFO_sva_inst/almostfull_from_full_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(93)
+                                                                              2556 Covered   
+/top/DUT/FIFO_sva_inst/almostfull_noChange_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(94)
+                                                                              6787 Covered   
+/top/DUT/FIFO_sva_inst/almostfull_inactive_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(95)
+                                                                               288 Covered   
+/top/DUT/FIFO_sva_inst/overflow_active_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(98)
+                                                                              8393 Covered   
+/top/DUT/FIFO_sva_inst/overflow_wr_in_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(99)
+                                                                               818 Covered   
+/top/DUT/FIFO_sva_inst/overflow_Nfull_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(100)
+                                                                               942 Covered   
+/top/DUT/FIFO_sva_inst/almostempty_noChange_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(103)
+                                                                              6787 Covered   
+/top/DUT/FIFO_sva_inst/almostempty_from_empty_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(104)
+                                                                              1391 Covered   
+/top/DUT/FIFO_sva_inst/almostempty_inactive_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(105)
+                                                                               526 Covered   
+/top/DUT/FIFO_sva_inst/empty_noChaneg_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(108)
+                                                                              6787 Covered   
+/top/DUT/FIFO_sva_inst/empty_from_almost_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(109)
+                                                                              1216 Covered   
+/top/DUT/FIFO_sva_inst/empty_inactive_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(110)
+                                                                              1391 Covered   
+/top/DUT/FIFO_sva_inst/underflow_active_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(113)
+                                                                              9033 Covered   
+/top/DUT/FIFO_sva_inst/underflow_Nempty_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(114)
+                                                                              1133 Covered   
+/top/DUT/FIFO_sva_inst/underflow_Nrd_cover 
+                                         FIFO_sva Verilog  SVA  DUT/assertion.sv(115)
+                                                                               939 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 28
+
+Total Coverage By Instance (filtered view): 100.00%
+

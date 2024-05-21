@@ -1,0 +1,82 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                                              || assert_wr_akc_rst:    `asrt_fn(wr_ack == 0);       ||
+//                                                              || assert_overflow_rst:  `asrt_fn(overflow == 0);     ||
+//                                                              || assert_underflow_rst: `asrt_fn(underflow == 0);    ||
+//                                                              || assert_data_out_rst:  `asrt_fn(data_out == 0);     ||
+// whwnever reset is active, all this signal should be inactive || assert_full_rst:        `asrt_fn(full == 0);       ||
+//                                                              || assert_almostfull_rst:  `asrt_fn(almostfull == 0); ||
+//                                                              || assert_empty_rst:       `asrt_fn(empty == 0);      ||
+//                                                              || assert_almostempty_rst: `asrt_fn(almostempty == 0);||
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+// almostfull
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+|| when almostfull is high and wr_en = 1 & rd_en = 0, full get high || full_from_almost: `asrt_prp(AA_I(almostfull,wr_en,rd_en) |=> full);  ||
+|| when full is high and rd_en =1, full will get low                || full_inactive:	  `asrt_prp(A_A(full,rd_en) |=> !full);             ||
+|| when same_seq acheved, full won't change from previous clk.cycle || full_noChange:	  `asrt_prp( `same_seq |=> $past(full) == full);    ||
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// wr_ack
+//////////////////////////////////////////////////////////////////////////////////////////////////
+|| wr_en=1&fifo not full, wr_ack = 1     || ack_active:   `asrt_prp(A_I(wr_en,full) |=> wr_ack);||
+|| fifo is full, wr_ack=0, can't be high || ack_inactive: `asrt_prp( full |=> !wr_ack);         ||
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+// full
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+|| full=1 & rd_en=1, full fell and almostfull raise                   || almostfull_from_full: `asrt_prp(A_A(full,rd_en)|=> ($fell(full) && $rose(almostfull)));||
+|| when same_seq acheved, almostfull won't change                     || almostfull_noChange:  `asrt_prp( `same_seq |=> $past(almostfull) == almostfull);       ||
+|| almostfull=1 & rd_en=0 and wr_en=0, almostfull Not active any more || almostfull_inactive:  `asrt_prp(AA_I(almostfull,rd_en,wr_en) |=> !almostfull );        ||
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// overflow
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+|| fifo is full and wr_en activated, overflow activated      || overflow_active:`asrt_prp(A_A(full,wr_en) |=> overflow);             ||
+|| last.clk.cycle.overflow=1 & wr_en=0, overflow deactivated || overflow_wr_in: `asrt_prp(($past(overflow) && !wr_en) |=> !overflow);||
+|| last.clk.cycle.overflow=1 & full=0, overflow deactivated  || overflow_Nfull: `asrt_prp(($past(overflow) && !full)  |=> !overflow);||
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// almostempty
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+|| when same_seq acheved, almostfull won't change                       ||almostempty_noChange:  `asrt_prp( `same_seq |=> ($past(almostempty) == almostempty));       ||
+|| empty=1 & rd_en=1, empty fell and almostempty raise                  ||almostempty_from_empty:`asrt_prp(A_A(empty,wr_en) |=> ($fell(empty) && $rose(almostempty)));||
+|| almostempty=1 & wr_en=0 and rd_en=0, almostempty Not active any more ||almostempty_inactive:  `asrt_prp(AA_I(almostempty,wr_en,rd_en) |=> !almostempty );          ||
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// empty
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+|| when same_seq acheved, empty won't change            || empty_noChaneg:   `asrt_prp( `same_seq |=> ($past(empty) == empty) );||
+|| almostempty=1 & rd_en=1 and wr_en=0, empty activated ||empty_from_almost: `asrt_prp(AA_I(almostempty,rd_en,wr_en) |=> empty);||
+|| empty=1 & wr_en=1, empty deactivated                 ||empty_inactive:    `asrt_prp(A_A(empty,wr_en) |=> !empty);            ||
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// underflow
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+|| empty=1 & rd_en=1, underflow activated                     ||underflow_active:  `asrt_prp(A_A(empty,rd_en) |=> underflow);              ||
+|| last.clk.cycle.underflow=1 & rd_en=0, overflow deactivated ||underflow_Nrd:     `asrt_prp(($past(underflow) && !rd_en)  |=> !underflow);||
+|| last.clk.cycle.underflow=1 & empty=0, overflow deactivated ||underflow_Nempty:  `asrt_prp(($past(underflow) && !empty)  |=> !underflow);||
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+|| 												    ||	assert_count_rst:  `asrt_fn(count == 0); ||
+|| whenever assert is activated this signal get low ||	assert_wr_ptr_rst: `asrt_fn(wr_ptr == 0);||
+||     											    ||	assert_rd_ptr_rst: `asrt_fn(rd_ptr == 0);||
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+|| When wr_en = 1 &rd_en=0 & full = 0, count increment by one  | count_inc: `asrt_prp(A_II(wr_en, rd_en, full) |=> ($past(count)+1 == count)); || 
+|| when rd_en=1 & wr_en=0 & empty = 0, count decrement by one  | count_dec: `asrt_prp(A_II(rd_en, wr_en, empty)|=> ($past(count)-1 == count)); || 
+|| when `same_seq excuted, count will not change 			   | count_noChange: `asrt_prp(`same_seq |=> ($past(count) == count));		       ||  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+|| when wr_en = 1 & count less than FIFO_DEPTH, wr_ptr increment || inc_wr_ptr_assert: `asrt_prp(A_A(wr_en,(count < FIFO_DEPTH)) |=> inc_ptr(wr_ptr)); ||
+|| when rd_en = 1 & count less than FIFO_DEPTH, rd_ptr increment || inc_rd_ptr_assert: `asrt_prp((rd_en && count != 0) |=> inc_ptr(rd_ptr) );          ||
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+|| whenever count is higher than or equal FIFO_DEPTH, full get high || full_count:`asrt_prp((count >= FIFO_DEPTH) |->  full);            ||
+|| whenever count is equal FIFO_DEPTH-1, almostfull get high 		|| almostfull_count:`asrt_prp((count==FIFO_DEPTH-1) |-> almostfull); ||
+|| whenever count is equal 1, almostempty get high 				    || almostempty_count: `asrt_prp((count==1) |-> almostempty );        ||
+|| whenever count is equal ZERO, empty get high 					|| empty_count: `asrt_prp((count==ZERO) |-> empty );                 ||
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
